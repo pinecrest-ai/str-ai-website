@@ -63,8 +63,8 @@ export default function Partnership() {
               transition={{ delay: 0.7, duration: 0.6 }}
             >
               <div className={styles.stat}>
-                <span className={styles.statNumber}>500+</span>
-                <span className={styles.statLabel}>Properties Managed</span>
+                <span className={styles.statNumber}>30+</span>
+                <span className={styles.statLabel}>Rentals</span>
               </div>
               <div className={styles.statDivider} />
               <div className={styles.stat}>

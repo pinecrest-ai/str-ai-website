@@ -23,8 +23,8 @@
 
 .logo {
   display: flex;
-  align-items: baseline;
-  gap: 4px;
+  align-items: center;
+  gap: 10px;
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 600;
@@ -35,12 +35,19 @@
   color: inherit;
 }
 
+.logoIcon {
+  width: 44px;
+  height: 44px;
+  color: var(--champagne-gold);
+}
+
 .logoText {
   color: var(--champagne);
 }
 
 .logoAccent {
   color: var(--champagne-gold);
+  margin-left: -2px;
 }
 
 .nav {

@@ -87,21 +87,21 @@ export default function Hero() {
             Explore Products
           </a>
         </motion.div>
-
-        <motion.div
-          className={styles.scrollIndicator}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2 }}
-        >
-          <motion.div
-            className={styles.scrollLine}
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity }}
-          />
-          <span>Scroll to explore</span>
-        </motion.div>
       </div>
+
+      <motion.div
+        className={styles.scrollIndicator}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2 }}
+      >
+        <motion.div
+          className={styles.scrollLine}
+          animate={{ y: [0, 10, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity }}
+        />
+        <span>Scroll to explore</span>
+      </motion.div>
     </section>
   )
 }

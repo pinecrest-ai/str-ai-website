@@ -37,6 +37,16 @@ export default function Header() {
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.headerInner}`}>
         <a href="#" className={styles.logo}>
+          <svg className={styles.logoIcon} viewBox="0 0 60 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            {/* Nested diamonds - offset vertically */}
+            <rect x="30" y="3" width="32" height="32" transform="rotate(45 30 3)" stroke="currentColor" strokeWidth="1.2" fill="none"/>
+            <rect x="30" y="7" width="32" height="32" transform="rotate(45 30 7)" stroke="currentColor" strokeWidth="1.2" fill="none"/>
+            <rect x="30" y="11" width="32" height="32" transform="rotate(45 30 11)" stroke="currentColor" strokeWidth="1.2" fill="none"/>
+            {/* Pine tree */}
+            <path d="M30 18L36 27H33L38 35H22L27 27H24L30 18Z" fill="currentColor"/>
+            {/* Tree trunk */}
+            <rect x="28" y="35" width="4" height="5" fill="currentColor"/>
+          </svg>
           <span className={styles.logoText}>STR</span>
           <span className={styles.logoAccent}>AI</span>
         </a>

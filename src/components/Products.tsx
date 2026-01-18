@@ -6,21 +6,21 @@ import styles from '../styles/Products.module.css'
 const products = [
   {
     id: 'owner-followup',
-    name: 'Automated Owner Follow-up',
+    name: 'Proactive Maintenance Alerts',
     icon: (
       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="6" y="10" width="36" height="28" rx="2" stroke="currentColor" strokeWidth="2"/>
         <path d="M6 18L24 28L42 18" stroke="currentColor" strokeWidth="2"/>
         <circle cx="38" cy="14" r="6" fill="currentColor"/>
-        <path d="M36 14L37.5 15.5L40 13" stroke="var(--black-rich)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M38 11V14.5M38 17H38.01" stroke="var(--black-rich)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
-    tagline: 'Turn guest feedback into actionable insights',
+    tagline: 'Keep owners informed with smart insights',
     benefits: [
-      'Automatically analyzes guest reviews as they come in',
-      'Extracts key insights and action items for property owners',
-      'Delivers timely updates to management companies',
-      'Saves hours of manual review processing weekly',
+      'Scans every review for maintenance red flags',
+      'Highlights wins and positive guest experiences',
+      'Sends proactive updates owners actually care about',
+      'Builds trust through transparent communication',
     ],
     visual: 'review-analysis',
   },
@@ -99,21 +99,17 @@ function ProductCard({ product, index }: { product: typeof products[0]; index: n
 function ReviewAnalysisVisual() {
   return (
     <div className={styles.reviewVisual}>
-      <div className={styles.reviewCard}>
-        <div className={styles.reviewStars}>
-          {[...Array(5)].map((_, i) => (
-            <svg key={i} viewBox="0 0 16 16" fill="currentColor">
-              <path d="M8 1L10.2 5.5L15 6.2L11.5 9.6L12.4 14.4L8 12L3.6 14.4L4.5 9.6L1 6.2L5.8 5.5L8 1Z"/>
-            </svg>
-          ))}
-        </div>
-        <p className={styles.reviewText}>"Amazing stay! The hot tub was perfect..."</p>
-      </div>
       <div className={styles.insightCard}>
         <div className={styles.insightHeader}>
-          <span className={styles.aiTag}>AI Insight</span>
+          <span className={styles.aiTagAlert}>Maintenance Alert</span>
         </div>
-        <p>Hot tub mentioned positively - maintain as key amenity</p>
+        <p>"AC struggled on hot days" - Schedule HVAC inspection</p>
+      </div>
+      <div className={styles.insightCardPositive}>
+        <div className={styles.insightHeader}>
+          <span className={styles.aiTagPositive}>Owner Update</span>
+        </div>
+        <p>"Hot tub was perfect!" - Guests love this amenity</p>
       </div>
     </div>
   )
