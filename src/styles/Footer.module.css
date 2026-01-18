@@ -1,0 +1,145 @@
+.footer {
+  background: var(--black-soft);
+  padding: 80px 0 40px;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.3), transparent);
+}
+
+.footerInner {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.footerBrand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.logo:hover {
+  color: inherit;
+}
+
+.logoText {
+  color: var(--champagne);
+}
+
+.logoAccent {
+  color: var(--champagne-gold);
+}
+
+.tagline {
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.linkGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.linkGroup h4 {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--champagne);
+  margin-bottom: 4px;
+}
+
+.linkGroup a {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+}
+
+.linkGroup a:hover {
+  color: var(--champagne-gold);
+}
+
+.footerBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(250, 244, 235, 0.05);
+}
+
+.copyright {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.legal {
+  display: flex;
+  gap: 24px;
+}
+
+.legal a {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+}
+
+.legal a:hover {
+  color: var(--champagne-gold);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 0 32px;
+  }
+
+  .footerLinks {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerLinks {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .linkGroup {
+    align-items: center;
+    text-align: center;
+  }
+
+  .legal {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}

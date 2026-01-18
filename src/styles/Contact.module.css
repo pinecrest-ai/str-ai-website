@@ -1,0 +1,139 @@
+.contact {
+  background: var(--black-rich);
+  position: relative;
+}
+
+.formContainer {
+  max-width: 700px;
+  margin: 0 auto;
+  background: var(--black-soft);
+  border: 1px solid rgba(250, 244, 235, 0.08);
+  border-radius: 4px;
+  padding: 48px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formGroup label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--champagne);
+  letter-spacing: 0.02em;
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+  background: var(--black-rich);
+}
+
+.formGroup select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M4 6L8 10L12 6' stroke='%23a09a90' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 44px;
+}
+
+.formGroup select option {
+  background: var(--black-soft);
+  color: var(--text-primary);
+}
+
+.inputError {
+  border-color: #c94a4a !important;
+}
+
+.error {
+  font-size: 0.75rem;
+  color: #c94a4a;
+}
+
+.submitBtn {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid transparent;
+  border-top-color: var(--black-rich);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Success Message */
+.successMessage {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.successIcon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 24px;
+  color: var(--champagne-gold);
+}
+
+.successIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.successMessage h3 {
+  font-size: 2rem;
+  color: var(--champagne);
+  margin-bottom: 16px;
+}
+
+.successMessage p {
+  color: var(--text-muted);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    padding: 32px 24px;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .formContainer {
+    padding: 24px 16px;
+  }
+}

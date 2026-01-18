@@ -1,0 +1,147 @@
+.partnership {
+  background: var(--black-soft);
+  position: relative;
+  overflow: hidden;
+}
+
+.partnership::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.3), transparent);
+}
+
+.partnershipInner {
+  position: relative;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.partnershipContent {
+  position: relative;
+  z-index: 1;
+}
+
+.poweredBy {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.brandNames {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.brand {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 500;
+  color: var(--champagne);
+}
+
+.brandDivider {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--champagne-gold);
+}
+
+.credibilityStatement {
+  max-width: 700px;
+  margin: 0 auto 48px;
+  color: var(--text-muted);
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.statNumber {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--champagne-gold);
+}
+
+.statLabel {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+.statDivider {
+  width: 1px;
+  height: 60px;
+  background: rgba(250, 244, 235, 0.1);
+}
+
+.decorativeElements {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.decorCircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  color: rgba(212, 175, 55, 0.1);
+}
+
+.decorCircle svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .brandNames {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .brandDivider {
+    display: none;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .statDivider {
+    width: 60px;
+    height: 1px;
+  }
+
+  .credibilityStatement {
+    font-size: 1rem;
+  }
+}
