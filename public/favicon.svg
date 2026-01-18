@@ -1,5 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="4" fill="#0a0a0a"/>
-  <text x="4" y="22" font-family="Georgia, serif" font-size="14" font-weight="600" fill="#f7e7ce">STR</text>
-  <text x="22" y="22" font-family="Georgia, serif" font-size="10" font-weight="600" fill="#d4af37">AI</text>
+<svg viewBox="0 0 60 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Nested diamonds - offset vertically -->
+  <rect x="30" y="3" width="32" height="32" transform="rotate(45 30 3)" stroke="#D4AF37" stroke-width="1.2" fill="none"/>
+  <rect x="30" y="7" width="32" height="32" transform="rotate(45 30 7)" stroke="#D4AF37" stroke-width="1.2" fill="none"/>
+  <rect x="30" y="11" width="32" height="32" transform="rotate(45 30 11)" stroke="#D4AF37" stroke-width="1.2" fill="none"/>
+  <!-- Pine tree -->
+  <path d="M30 18L36 27H33L38 35H22L27 27H24L30 18Z" fill="#D4AF37"/>
+  <!-- Tree trunk -->
+  <rect x="28" y="35" width="4" height="5" fill="#D4AF37"/>
 </svg>
