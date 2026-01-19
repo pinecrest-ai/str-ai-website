@@ -15,12 +15,12 @@ const products = [
         <path d="M38 11V14.5M38 17H38.01" stroke="var(--black-rich)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
-    tagline: 'Keep owners informed with smart insights',
+    tagline: 'Nothing slips through the cracks',
     benefits: [
-      'Scans every review for maintenance red flags',
-      'Highlights wins and positive guest experiences',
-      'Sends proactive updates owners actually care about',
-      'Builds trust through transparent communication',
+      'Weekly review analysis surfaces issues cleaners and VAs miss',
+      'Catches small problems before they become bad reviews or lost revenue',
+      'Monthly automated owner reports with actionable improvement suggestions',
+      'Positions you as proactive and data-driven—building trust without extra work',
     ],
     visual: 'review-analysis',
   },
@@ -34,12 +34,12 @@ const products = [
         <rect x="6" y="6" width="36" height="36" rx="2" stroke="currentColor" strokeWidth="2"/>
       </svg>
     ),
-    tagline: 'Maximize revenue with intelligent pricing',
+    tagline: 'Operate like the top 1% of PriceLabs users',
     benefits: [
-      'Ingests local market data and competitor pricing',
-      'AI algorithm optimizes listing prices in real-time',
-      'Accounts for seasonality, demand, and events',
-      'Proven to increase revenue by 15-25%',
+      'Advanced PriceLabs API automation—no dashboard babysitting required',
+      'Prices adjust automatically based on real-time market signals',
+      'React to demand faster than managers who check in once a week',
+      'Capture more upside and outperform "set and forget" competition',
     ],
     visual: 'pricing-chart',
   },
@@ -101,15 +101,15 @@ function ReviewAnalysisVisual() {
     <div className={styles.reviewVisual}>
       <div className={styles.insightCard}>
         <div className={styles.insightHeader}>
-          <span className={styles.aiTagAlert}>Maintenance Alert</span>
+          <span className={styles.aiTagAlert}>Weekly Insight</span>
         </div>
-        <p>"AC struggled on hot days" - Schedule HVAC inspection</p>
+        <p>3 guests mentioned slow WiFi—issue your cleaner missed</p>
       </div>
       <div className={styles.insightCardPositive}>
         <div className={styles.insightHeader}>
-          <span className={styles.aiTagPositive}>Owner Update</span>
+          <span className={styles.aiTagPositive}>Monthly Report</span>
         </div>
-        <p>"Hot tub was perfect!" - Guests love this amenity</p>
+        <p>Hot tub praise in 8/10 reviews—highlight for owner</p>
       </div>
     </div>
   )
@@ -134,7 +134,7 @@ function PricingChartVisual() {
       </div>
       <div className={styles.chartLabel}>
         <span className={styles.chartUp}>+23%</span>
-        <span>Revenue Increase</span>
+        <span>vs. set-and-forget</span>
       </div>
     </div>
   )

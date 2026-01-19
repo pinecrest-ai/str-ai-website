@@ -8,18 +8,18 @@ const workflows = {
     steps: [
       {
         number: '01',
-        title: 'Guest Reviews Collected',
-        description: 'Reviews are automatically gathered from all your listing platforms in real-time.',
+        title: 'Weekly Review Analysis',
+        description: 'Every review is scanned for maintenance red flags, operational issues, and guest praise your team may have missed.',
       },
       {
         number: '02',
-        title: 'AI Analysis',
-        description: 'Our AI extracts sentiment, key topics, and actionable items from each review.',
+        title: 'Issues Surfaced Early',
+        description: 'Small problems are caught before they become bad reviews or costly repairs—keeping you ahead of issues.',
       },
       {
         number: '03',
-        title: 'Owner Updates Delivered',
-        description: 'Customized reports are sent to property owners with relevant insights and recommendations.',
+        title: 'Monthly Owner Reports',
+        description: 'Automated reports with actionable insights position you as proactive and data-driven—no extra work required.',
       },
     ],
   },
@@ -28,18 +28,18 @@ const workflows = {
     steps: [
       {
         number: '01',
-        title: 'Market Data Ingestion',
-        description: 'We analyze competitor pricing, local events, and historical demand patterns.',
+        title: 'PriceLabs API Integration',
+        description: 'Advanced automation connects directly to PriceLabs—no dashboard babysitting required.',
       },
       {
         number: '02',
-        title: 'Algorithm Optimization',
-        description: 'Our pricing engine calculates optimal rates based on multiple market factors.',
+        title: 'Real-Time Market Signals',
+        description: 'Prices adjust automatically based on demand, events, and competitor moves faster than weekly check-ins.',
       },
       {
         number: '03',
-        title: 'Dynamic Price Updates',
-        description: 'Prices are automatically adjusted across platforms to maximize your revenue.',
+        title: 'Outperform the Competition',
+        description: 'Capture more upside while "set and forget" managers leave money on the table.',
       },
     ],
   },
