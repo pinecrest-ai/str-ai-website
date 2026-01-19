@@ -20,7 +20,7 @@ const products = [
       'Weekly review analysis surfaces issues cleaners and VAs miss',
       'Catches small problems before they become bad reviews or lost revenue',
       'Monthly automated owner reports with actionable improvement suggestions',
-      'Positions you as proactive and data-driven—building trust without extra work',
+      'Positions you as proactive and data-driven. Builds trust without extra work',
     ],
     visual: 'review-analysis',
   },
@@ -36,7 +36,7 @@ const products = [
     ),
     tagline: 'Operate like the top 1% of PriceLabs users',
     benefits: [
-      'Advanced PriceLabs API automation—no dashboard babysitting required',
+      'Advanced PriceLabs API automation. No dashboard babysitting required',
       'Prices adjust automatically based on real-time market signals',
       'React to demand faster than managers who check in once a week',
       'Capture more upside and outperform "set and forget" competition',
@@ -103,13 +103,13 @@ function ReviewAnalysisVisual() {
         <div className={styles.insightHeader}>
           <span className={styles.aiTagAlert}>Weekly Insight</span>
         </div>
-        <p>3 guests mentioned slow WiFi—issue your cleaner missed</p>
+        <p>3 guests mentioned slow WiFi. Issue your cleaner missed</p>
       </div>
       <div className={styles.insightCardPositive}>
         <div className={styles.insightHeader}>
           <span className={styles.aiTagPositive}>Monthly Report</span>
         </div>
-        <p>Hot tub praise in 8/10 reviews—highlight for owner</p>
+        <p>Hot tub praise in 8/10 reviews. Highlight for owner</p>
       </div>
     </div>
   )
