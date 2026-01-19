@@ -103,13 +103,13 @@ function ReviewAnalysisVisual() {
         <div className={styles.insightHeader}>
           <span className={styles.aiTagAlert}>Weekly Insight</span>
         </div>
-        <p>3 guests mentioned slow WiFi. Issue your cleaner missed</p>
+        <p>3 guests flagged slow WiFi: check router</p>
       </div>
       <div className={styles.insightCardPositive}>
         <div className={styles.insightHeader}>
           <span className={styles.aiTagPositive}>Monthly Report</span>
         </div>
-        <p>Hot tub praise in 8/10 reviews. Highlight for owner</p>
+        <p>Hot tub is a hit: mention to owner</p>
       </div>
     </div>
   )
