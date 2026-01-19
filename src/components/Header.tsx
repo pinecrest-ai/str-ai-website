@@ -47,8 +47,8 @@ export default function Header() {
             {/* Tree trunk */}
             <rect x="28" y="35" width="4" height="5" fill="currentColor"/>
           </svg>
-          <span className={styles.logoText}>STR</span>
-          <span className={styles.logoAccent}>AI</span>
+          <span className={styles.logoText}>Top</span>
+          <span className={styles.logoAccent}>Host</span>
         </a>
 
         <nav className={styles.nav}>

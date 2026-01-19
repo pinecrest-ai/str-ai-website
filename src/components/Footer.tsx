@@ -8,8 +8,8 @@ export default function Footer() {
       <div className={`container ${styles.footerInner}`}>
         <div className={styles.footerBrand}>
           <a href="#" className={styles.logo}>
-            <span className={styles.logoText}>STR</span>
-            <span className={styles.logoAccent}>AI</span>
+            <span className={styles.logoText}>Top</span>
+            <span className={styles.logoAccent}>Host</span>
           </a>
           <p className={styles.tagline}>
             Intelligent solutions for short-term rentals
@@ -31,7 +31,7 @@ export default function Footer() {
 
         <div className={styles.footerBottom}>
           <p className={styles.copyright}>
-            &copy; {currentYear} STR AI. Powered by Pinecrest AI × Freedom & Fortune.
+            &copy; {currentYear} Top Host. Powered by Pinecrest AI × Freedom & Fortune.
           </p>
           <div className={styles.legal}>
             <a href="#">Privacy Policy</a>
