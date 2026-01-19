@@ -8,18 +8,18 @@ const workflows = {
     steps: [
       {
         number: '01',
-        title: 'Weekly Review Analysis',
-        description: 'Every review is scanned for maintenance red flags, operational issues, and guest praise your team may have missed.',
+        title: 'Reviews Collected',
+        description: 'Guest feedback from Airbnb, VRBO, and direct bookings aggregated automatically.',
       },
       {
         number: '02',
-        title: 'Issues Surfaced Early',
-        description: 'Small problems are caught before they become bad reviews or costly repairs—keeping you ahead of issues.',
+        title: 'AI Extracts Insights',
+        description: 'Each review scanned for maintenance flags, operational gaps, and standout wins.',
       },
       {
         number: '03',
-        title: 'Monthly Owner Reports',
-        description: 'Automated reports with actionable insights position you as proactive and data-driven—no extra work required.',
+        title: 'Reports Delivered',
+        description: 'Weekly issue alerts. Monthly trend summaries. Owners stay informed, you stay ahead.',
       },
     ],
   },
@@ -28,18 +28,18 @@ const workflows = {
     steps: [
       {
         number: '01',
-        title: 'PriceLabs API Integration',
-        description: 'Advanced automation connects directly to PriceLabs—no dashboard babysitting required.',
+        title: 'PriceLabs Connected',
+        description: 'One-time API setup. No manual dashboard work after that.',
       },
       {
         number: '02',
-        title: 'Real-Time Market Signals',
-        description: 'Prices adjust automatically based on demand, events, and competitor moves faster than weekly check-ins.',
+        title: 'Market Signals Tracked',
+        description: 'Competitor rates, local events, and demand patterns monitored continuously.',
       },
       {
         number: '03',
-        title: 'Outperform the Competition',
-        description: 'Capture more upside while "set and forget" managers leave money on the table.',
+        title: 'Rates Adjust Automatically',
+        description: 'Prices respond to market changes faster than any manual check-in.',
       },
     ],
   },
