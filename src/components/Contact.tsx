@@ -61,12 +61,13 @@ export default function Contact() {
     setIsSubmitting(true)
 
     try {
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://formsubmit.co/ajax/david@pinecrestai.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
+          _subject: `Top Host Contact: ${formData.name}`,
           name: formData.name,
           email: formData.email,
           company: formData.company,
