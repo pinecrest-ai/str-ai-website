@@ -1,8 +1,5 @@
 [phases.setup]
-nixPkgs = ["nodejs", "caddy"]
-
-[phases.build]
-cmds = ["npm ci", "npm run build"]
+nixPkgs = ["...", "caddy"]
 
 [start]
-cmd = "caddy run --config Caddyfile"
+cmd = "caddy run --config Caddyfile --adapter caddyfile"
